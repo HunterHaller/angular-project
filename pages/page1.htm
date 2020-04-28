@@ -1,0 +1,21 @@
+<p><strong>1. Which currency is superior?</strong></p>
+
+
+<form>
+  <input type="radio" ng-model="currency" value="Australian dollar"><span class="choiceText">Australian dollar</span>
+  <br>
+  <input type="radio" ng-model="currency" value="American dollar"><span class="choiceText">American dollar</span>
+</form>
+
+<div class="popupLeft" ng-show="currency"><p>Oh, so you like the {{currency}}, huh? Interesting...</p></div>
+
+<p><strong>2. What is the best animal?</strong></p>
+
+<form>
+  <select ng-model="animal" ng-options="x for x in animals">
+  </select>
+</form>
+
+<div class="popupRight" ng-show="animal"><p>A fan of the old {{animal}}? I had a feeling you might like that one.</p></div>
+
+<a href="#!page2" ng-show="animal && currency"><button type="button">More questions!</button></a>

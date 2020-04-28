@@ -1,0 +1,16 @@
+<p><strong>5. Are you willing to write a 1,000 word essay on the environmental effects of wearing hats with diameters greater than 2 feet?</strong></p>
+
+<form>
+  <input type="radio" ng-model="essay" value="1"><span class="choiceText">Yes!</span>
+  <br>
+  <input type="radio" ng-model="essay" value="2"><span class="choiceText">No?</span>
+</form>
+
+<div ng-show="essay == 1">
+  <p>Please write your essay here:</p>
+  <textarea ng-model="essayText" rows="10" cols="70"></textarea>
+</div>
+
+<a href="#!results" ng-show="essay == 2"><button type="button">{{buttonTextA}}</button></a>
+
+<a href="#!results" ng-show="(essay == 1) && essayText"><button type="button">{{buttonTextB}}</button></a>

@@ -1,0 +1,21 @@
+{
+  "name": "portal-boiler",
+  "version": "1.0.0",
+  "description": "Hunter's custom boilerplate!",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "auto-prefixer": "^0.4.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

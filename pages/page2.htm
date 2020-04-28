@@ -1,0 +1,20 @@
+<p><strong>3. Think of your favorite shirt. You know the it, the one you wore to the Apollo 11 launch in '69. What color is it?</strong></p>
+
+<input type="text" ng-model="color" placeholder="Something interesting, I hope">
+
+<p class="popup" ng-show="condescendingMessage == 1">Seems like you're taking quite some time on this question. Please don't think about it too hard (don't want you hurting yourself).</p>
+
+<div class="popupLeft" ng-show="color"><p>Wouldn't it be great if there was a crayon that was {{color}} colored? Or if {{color}} was in the rainbow?</p></div>
+
+<p><strong>4. You're wandering in the woods (alone again ;-;) and you stumble across a giant hole in the ground. What do you do?</strong></p>
+
+<input type="checkbox" ng-model="shout"><span class="choiceText">Shout into it really loudly and hope there's an echo</span></input>
+<br>
+<input type="checkbox" ng-model="jump"><span class="choiceText">Jump, just freakin go for it</span></input>
+
+<div class="popupRight" ng-show="shout == true"><p>Yes, yell it out!</p></div>
+<div class="popupRight" ng-show="jump"><p>WHEEEEEE!!!</p></div>
+
+<br>
+
+<a href="#!page3" ng-show="color && (jump || shout)"><button type="button">Final questions!!!</button></a>
